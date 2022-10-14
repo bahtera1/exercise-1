@@ -1,9 +1,9 @@
 ﻿using System;
 
 
-namespace exercise_1
+namespace exercise_1    /////buat namespace exercise
 {
-    class exercise
+    class exercise        ///// buat class exercise
     {
         private int[] a = new int[78];
 
@@ -19,8 +19,16 @@ namespace exercise_1
                 if (n < 78)
                     break;
                 else
-                    Console.WriteLine("array dapat memiliki nilai maksimal 78 elemen");
+                    Console.WriteLine("\nArray dapat memiliki nilai maksimal 78 elemen.\n");
+            }
+            Console.ReadLine("......");
+            Console.ReadLine(".................");
+            Console.ReadLine("Masukann elemen array");
+            Console.ReadLine(".......");
 
+            for (int i = 0; i < 0; i++)
+            {
+                Console.Write("<" + (i+1) + "<");
             }
         }
     }
