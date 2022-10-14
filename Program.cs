@@ -47,13 +47,12 @@ namespace exercise_1    /////buat namespace exercise
             Console.WriteLine("");
         }
 
-        publc void BubbleSort_Array()
+        public void BubbleSort_Array()
         {
             for (int NA=0; NA<n; NA++)
             {
                 if (a[NA] > a[j+1])
                 {
-
                     /////tukar elemen arr[j] sengan arr[min_index]
                     int temp;
                     temp = a[NA];
@@ -62,22 +61,23 @@ namespace exercise_1    /////buat namespace exercise
                 }
             }
         }
+
+        static void Main(string[] args)
+        {
+            mylist = new exercise_1();
+
+            mylist[0].BubbleSort_Array();
+
+            mylist.display();
+
+            Console.WriteLine("n\Tekan Tombol apa saja untuk kelauar");
+            Console.ReadKey();
+
+
+
+        }
     }
 }
  
 
 
-
-
-
-
-
-
-
-
-
-
-static void Main(string[] args)
-{
-    
-}
