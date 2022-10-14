@@ -15,7 +15,11 @@ namespace exercise_1
             {
                 Console.WriteLine("masukan banyak pada elemen array");
                 string s = Console.ReadLine();
-                if(s ==)
+                n =Int32.Parse(s);
+                if (n < 78)
+                    break;
+                else
+                    Console.WriteLine("array dapat memiliki nilai maksimal 78 elemen");
 
             }
         }
