@@ -9,7 +9,7 @@ namespace exercise_1    /////buat namespace exercise
 
         private int n;
 
-        public void read()
+        public void read()  ///// buat void read
         {
             while(true)
             {
@@ -47,26 +47,29 @@ namespace exercise_1    /////buat namespace exercise
             Console.WriteLine("");
         }
 
-        public void BubbleSort_Array()
+        public void BubbleSort_Array() /////untuk n-1 
         {
             for (int NA=0; NA<n; NA++)
             {
-                if (a[NA] > a[j+1])
+                for (int NA = 0; NA < n; j++)
                 {
-                    /////tukar elemen arr[j] sengan arr[min_index]
-                    int temp;
-                    temp = a[NA];
-                    a[NA] = a[NA+1];
-                    a[NA+1] = temp;
-                }
+                    if (a[NA] > a[j + 1])   /////jika elemen tidak dalam urutan yg benar
+                    {
+                        /////tukar elemen arr[j] sengan arr[min_index]
+                        int temp;
+                        temp = a[NA];
+                        a[NA] = a[NA + 1];
+                        a[NA + 1] = temp;
+                    }
+                }  
             }
         }
 
         static void Main(string[] args)
         {
-            mylist = new exercise_1();
+            exercise_1 exercise_1 = new exercise_1();
 
-            mylist[0].BubbleSort_Array();
+            mylist[].BubbleSort_Array();
 
             mylist.display();
 
